@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat} from "next/font/google";
 import "./globals.scss";
+import {LayoutWidget} from "@/core/widgets/layout";
 
 const MontserratFont = Montserrat({
     subsets: ['latin'],
@@ -26,9 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${MontserratFont.className}  antialiased`}
+        className={`${MontserratFont.className} relative antialiased`}
       >
-        {children}
+      <LayoutWidget>
+      {children}
+      </LayoutWidget>
+
       </body>
     </html>
   );
