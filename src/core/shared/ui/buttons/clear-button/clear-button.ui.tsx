@@ -12,7 +12,7 @@ const buttonVariants = cva(
       variant: {
         default: 'text-[#18181B] hover:text-[#0935FE]',
         withBorder: ' rounded-[36px] border border-[#0935FE] hover:bg-[#17171720] text-[#0935FE]',
-
+        withBg:'bg-[linear-gradient(170deg,_rgba(152,238,255,1)_0%,_rgba(9,53,254,1)_50%)] rounded-[40px]'
       },
 
     },
