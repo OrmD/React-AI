@@ -10,7 +10,7 @@ interface ILayoutWidgetProps {
 
 const LayoutWidget: FC<ILayoutWidgetProps> = ({ children }) => {
   return (
-    <main className='relative flex h-screen w-screen overflow-hidden'>
+    <main className='relative flex flex-col md:gap-[50px] gap-[20px] w-screen overflow-hidden'>
       {children}
       <HeaderComponent  />
     </main>

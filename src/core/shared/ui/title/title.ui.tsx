@@ -8,8 +8,8 @@ const titleVariants=cva(
     {
         variants:{
             variant: {
-                white: 'text-white font-medium leading-[60px] text-[50px] text-center',
-                black: 'text-dark',
+                white: 'text-white font-medium leading-[60px] text-[50px] ',
+                black: 'text-dark font-semibold text-[35px] leading-[50px]',
             },
         },
             defaultVariants:{
@@ -35,7 +35,7 @@ const TitleUi: FC<ITitleProps> = ({
 
   return (
     <Tag
-      className={cn(titleVariants({variant}), 'text-center font-medium !text-white', className)}
+      className={cn(titleVariants({variant}), 'text-center', className)}
       {...otherProps}
     >
       {children}

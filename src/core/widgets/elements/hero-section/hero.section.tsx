@@ -20,9 +20,9 @@ const data={
 const HeroSection: FC<IHeroSectionProps> = ({ className }) => {
 
     return (
-      <section className={cn('relative  aspect-[12/8] max-h-[800px] h-full w-full',className)}>
+      <section className={cn('relative h-[600px] md:h-[800px] w-full',className)}>
           <ImageUI src='/hero-img.png' imageClassName='object-cover' className='z-[1]' fill/>
-      <div className='relative z-[2] h-full flex flex-col items-center justify-center text-center  px-5'>
+      <div className='relative z-[2] h-full flex flex-col items-center justify-end p-[90px] md:justify-center text-center  px-5'>
           {data.title && <TitleUI as='h1' className='leading-[60px] mb-3' variant={'white'}>{data.title}</TitleUI>}
           {data.subTitle && <SubTitleUI as='h1' className='mb-9' variant={'white'}>{data.subTitle}</SubTitleUI>}
 
